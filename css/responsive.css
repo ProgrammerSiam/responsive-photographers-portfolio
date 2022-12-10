@@ -1,0 +1,92 @@
+@media (max-width: 1200px) {
+  .about-img {
+    grid-column: 1/ 13;
+  }
+
+  .about-content {
+    grid-column: 1 / span 13;
+  }
+}
+
+/*=============== large device responsive start here ===============*/
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding-right: 0;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  header {
+    width: 100%;
+    left: -120%;
+  }
+
+  header.active {
+    left: 0%;
+  }
+
+  #menu-bars {
+    display: initial;
+  }
+
+  header .navbar {
+    writing-mode: horizontal-tb;
+  }
+
+  header .navbar a {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .service--des,
+  .package--des {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/*===============  medium responsive start here ===============*/
+@media (max-width: 768px) {
+  .car-top,
+  .package--des {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .v-img {
+    grid-row: 3 span;
+  }
+
+  .vh-img {
+    grid-row: 4 span;
+  }
+}
+
+/*===============  small responsive start here ===============*/
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  form .input {
+    padding: 1rem 4.5rem;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+}
